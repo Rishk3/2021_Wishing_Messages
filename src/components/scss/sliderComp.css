@@ -1,0 +1,115 @@
+.black {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.black .header {
+  padding: 10px 10px 1px 10px;
+  background-color: #131313;
+}
+
+.black .header .title {
+  font-size: 24px;
+}
+
+.black .body {
+  text-align: center;
+}
+
+.black .body .phrase {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.black .body .img_2020 {
+  width: 70%;
+  max-width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.black .body .quote {
+  padding: 30px 50px;
+  padding-bottom: 0px;
+  text-align: justify;
+}
+
+.black .body .quote .author {
+  font-style: italic;
+  font-weight: 700;
+  color: #79541d;
+  float: right;
+}
+
+.black .body .lets_move_button button {
+  color: #fff;
+  background: #cfcfcf;
+  background: -webkit-gradient(linear, left top, right top, from(#cfcfcf), to(black));
+  background: linear-gradient(90deg, #cfcfcf 0%, black 100%);
+  padding-left: 16px;
+  padding-right: 10px;
+}
+
+.black .body .lets_move_button button span {
+  margin-top: 5px;
+}
+
+.welcome {
+  background-color: #043a3a;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.welcome .header {
+  padding: 10px 10px 1px 10px;
+  background-color: #0e6161;
+}
+
+.welcome .header .title {
+  font-size: 24px;
+}
+
+.welcome .body {
+  text-align: center;
+}
+
+.welcome .body .phrase {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.welcome .body .img_2020 {
+  width: 70%;
+  max-width: 400px;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.welcome .body .quote {
+  padding: 20px 50px;
+  text-align: justify;
+}
+
+.welcome .body .quote .author {
+  font-style: italic;
+  font-weight: 700;
+  color: #c0199c;
+  float: right;
+}
+
+.welcome .body .lets_move_button button {
+  color: #fff;
+  background: #a62a2a;
+  background: linear-gradient(128deg, #2aa691 0%, #ae8888 50%, #0b5350 100%);
+  padding-left: 16px;
+  padding-right: 10px;
+}
+
+.welcome .body .lets_move_button button span {
+  margin-top: 5px;
+}
+/*# sourceMappingURL=sliderComp.css.map */

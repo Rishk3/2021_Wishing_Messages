@@ -1,0 +1,320 @@
+.home {
+  background-color: #133965;
+  color: white;
+}
+
+.home p,
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home h5,
+.home h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.home .nav {
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .nav .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .nav .logo h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.home .nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+.home .nav .right .link {
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.home .nav .right .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .nav .right .profile span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.home .wish {
+  background-color: #0b223b;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.home .wish h2 {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.home .wish .MessaegSection:nth-child(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 16px;
+  padding: 16px 24px;
+  padding-bottom: 28px;
+  border-radius: 14px;
+  background: #08332c;
+  -webkit-box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+          box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .msgInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .msgInfo .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .msgInfo .profile .profile_name {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 8px;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .msgInfo .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .msgInfo .right .msgTime {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .chatBox {
+  margin-top: 12px;
+  margin-left: 16px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "poppins";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-style: italic;
+  text-align: justify;
+  border-radius: 14px;
+  background: #08332c;
+  -webkit-box-shadow: 7px 7px 14px #041916, -7px -7px 14px #0c4d42;
+          box-shadow: 7px 7px 14px #041916, -7px -7px 14px #0c4d42;
+  position: relative;
+}
+
+.home .wish .MessaegSection:nth-child(odd) .chatBox .traingle {
+  background-color: #08332c;
+  top: -5px;
+  left: 0px;
+  -webkit-clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+          clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+  min-width: 40px;
+  z-index: 2;
+  min-height: 40px;
+  position: absolute;
+}
+
+.home .wish .MessaegSection:nth-child(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 24px;
+  margin: 16px;
+  border-radius: 14px;
+  padding-bottom: 28px;
+  -webkit-box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+          box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+  background-color: #250424;
+}
+
+.home .wish .msgInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .wish .msgInfo .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .wish .msgInfo .profile .profile_name {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 8px;
+}
+
+.home .wish .msgInfo .msgTime {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.home .wish .chatBox {
+  margin-top: 12px;
+  margin-left: 16px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: "poppins";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-style: italic;
+  text-align: justify;
+  border-radius: 10px;
+  background: #250424;
+  position: relative;
+  -webkit-box-shadow: 9px 9px 18px #120212, -9px -9px 18px #380636;
+          box-shadow: 9px 9px 18px #120212, -9px -9px 18px #380636;
+}
+
+.home .wish .chatBox .traingle {
+  background-color: #250424;
+  top: -5px;
+  left: 0px;
+  -webkit-clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+          clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+  min-width: 40px;
+  z-index: 2;
+  min-height: 40px;
+  position: absolute;
+}
+
+.home .create {
+  background-color: #290b3b;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.home .create h2 {
+  font-size: 26px;
+  padding-top: 16px;
+}
+
+.home .create .formborder {
+  padding: 2px;
+  margin: 20px 20px;
+  background: #201533;
+  background: -webkit-gradient(linear, left top, right top, from(#d46961), color-stop(20%, #9b8523), color-stop(40%, #4fd62d), color-stop(60%, #ca742d), color-stop(80%, #c92c58), to(#ac1dc5));
+  background: linear-gradient(90deg, #d46961 0%, #9b8523 20%, #4fd62d 40%, #ca742d 60%, #c92c58 80%, #ac1dc5 100%);
+}
+
+.home .create .formMessage {
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 30vh;
+  background-color: #3d0f57;
+}
+
+.home .create .formMessage p {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.home .create .formMessage .message2021 {
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 16px 8px;
+  outline: none;
+  border: none;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #3d0f57;
+  -webkit-box-shadow: 6px 6px 16px #2b0b3d, -6px -6px 16px #4f1471;
+          box-shadow: 6px 6px 16px #2b0b3d, -6px -6px 16px #4f1471;
+}
+
+.home .create .formMessage .btn-group {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .create .formMessage .btn-group .default-btn {
+  outline: none;
+  background-color: #4f3161;
+  color: #fff;
+}
+
+.home .create .formMessage .btn-group .submit-btn {
+  color: #fff;
+  outline: none;
+  background-color: #136e53;
+}
+/*# sourceMappingURL=main.css.map */

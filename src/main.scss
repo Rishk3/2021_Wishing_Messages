@@ -1,0 +1,239 @@
+$bacground_1_color: #000000;
+$bacground_2_color: #043a3a;
+$bacground_3_color: #133965;
+
+.home {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  background-color: $bacground_3_color;
+  color: white;
+  .nav {
+    padding: 20px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      align-items: center;
+      h2 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .right {
+      display: flex;
+      margin-right: 20px;
+      .link {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        color: #ffffff;
+        margin-right: 15px;
+      }
+      .profile {
+        display: flex;
+        span {
+          align-items: center;
+          margin-left: 5px;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  //wishmessage componets
+  .wish {
+    background-color: #0b223b;
+    min-height: 90vh;
+    text-align: center;
+    h2 {
+      font-size: 24px;
+      padding: 10px 0px;
+    }
+    .MessaegSection:nth-child(odd) {
+      display: flex;
+      flex-direction: column;
+      margin: 16px;
+      padding: 16px 24px;
+      padding-bottom: 28px;
+      border-radius: 14px;
+      background: #08332c;
+      box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+
+      .msgInfo {
+        display: flex;
+        justify-content: space-between;
+        .profile {
+          display: flex;
+          .profile_name {
+            align-self: flex-end;
+            margin-left: 8px;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+          .msgTime {
+            align-self: flex-end;
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      .chatBox {
+        margin-top: 12px;
+        margin-left: 16px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-family: "poppins";
+        flex: 1;
+        font-style: italic;
+        text-align: justify;
+        border-radius: 14px;
+        background: #08332c;
+        box-shadow: 7px 7px 14px #041916, -7px -7px 14px #0c4d42;
+        position: relative;
+        .traingle {
+          background-color: #08332c;
+          top: -5px;
+          left: 0px;
+          clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+          min-width: 40px;
+          z-index: 2;
+          min-height: 40px;
+
+          position: absolute;
+        }
+      }
+    }
+    .MessaegSection:nth-child(even) {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 24px;
+      margin: 16px;
+      border-radius: 14px;
+      padding-bottom: 28px;
+      box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
+      background-color: #250424;
+    }
+    .msgInfo {
+      display: flex;
+      justify-content: space-between;
+      .profile {
+        display: flex;
+        .profile_name {
+          align-self: flex-end;
+          margin-left: 8px;
+        }
+      }
+      .msgTime {
+        align-self: flex-end;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+
+    .chatBox {
+      margin-top: 12px;
+      margin-left: 16px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-family: "poppins";
+      flex: 1;
+      font-style: italic;
+      text-align: justify;
+      border-radius: 10px;
+      background: #250424;
+      position: relative;
+      box-shadow: 9px 9px 18px #120212, -9px -9px 18px #380636;
+      .traingle {
+        background-color: #250424;
+        top: -5px;
+        left: 0px;
+        clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+        min-width: 40px;
+        z-index: 2;
+        min-height: 40px;
+
+        position: absolute;
+      }
+    }
+  }
+
+  //create Page
+  .create {
+    background-color: #290b3b;
+    min-height: 90vh;
+    text-align: center;
+    h2 {
+      font-size: 26px;
+      padding-top: 16px;
+    }
+    .formborder {
+      padding: 2px;
+      margin: 20px 20px;
+      background: rgb(32, 21, 51);
+      background: linear-gradient(
+        90deg,
+        rgb(212, 105, 97) 0%,
+        rgb(155, 133, 35) 20%,
+        rgb(79, 214, 45) 40%,
+        rgb(202, 116, 45) 60%,
+        rgb(201, 44, 88) 80%,
+        rgb(172, 29, 197) 100%
+      );
+    }
+    .formMessage {
+      padding: 30px 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 30vh;
+      background-color: #3d0f57;
+      p {
+        text-align: left;
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
+      .message2021 {
+        border-radius: 10px;
+        min-height: 200px;
+        padding: 16px 8px;
+        outline: none;
+        border: none;
+        color: #fff;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #3d0f57;
+        box-shadow: 6px 6px 16px #2b0b3d, -6px -6px 16px #4f1471;
+      }
+      .btn-group {
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        .default-btn {
+          outline: none;
+          background-color: #4f3161;
+          color: #fff;
+        }
+        .submit-btn {
+          color: #fff;
+          outline: none;
+          background-color: #136e53;
+        }
+      }
+    }
+  }
+}

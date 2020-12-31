@@ -67,7 +67,7 @@ function timeConverter(UNIX_timestamp){
                  {<span className="totalLikes" style={{color:"#fff"}}></span>}</Button>)}
         </div>
         <div className="right">
-       {!user && user?.displayName==userName && <Button style={{color:"#fff",border:"none"}} onClick={deleteMsg}><DeleteIcon/></Button>}
+       { user?.displayName==userName && <Button style={{color:"#fff",border:"none"}} onClick={deleteMsg}><DeleteIcon/></Button>}
         <p className="msgTime">{currTime}</p>
         </div>
         

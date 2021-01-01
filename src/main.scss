@@ -2,7 +2,14 @@ $bacground_1_color: #000000;
 $bacground_2_color: #043a3a;
 $bacground_3_color: #133965;
 
+@mixin random-bgr() {
+  background: rgb(random(255), random(255), random(255));
+}
+
 .home {
+  button:focus {
+    outline: none !important;
+  }
   p,
   h1,
   h2,
@@ -22,9 +29,10 @@ $bacground_3_color: #133965;
     justify-content: space-between;
     .logo {
       align-items: center;
-      h2 {
+      h3 {
         font-size: 20px;
         margin: 0;
+        text-align: center;
         padding: 0;
       }
     }
@@ -40,6 +48,7 @@ $bacground_3_color: #133965;
       }
       .profile {
         display: flex;
+        cursor: pointer;
         span {
           align-items: center;
           margin-left: 5px;
@@ -51,6 +60,53 @@ $bacground_3_color: #133965;
   }
   //wishmessage componets
   .wish {
+    .btnAdd {
+      background-color: #285291;
+      padding: 12px 20px;
+      .link {
+        color: #ffffff;
+        display: flex;
+      }
+    }
+    padding: 10px;
+    .msgbackcolor0 {
+      background-color: #250424 !important;
+    }
+    .msgbackcolor1 {
+      background-color: #08332c !important;
+    }
+    .msgbackcolor2 {
+      background-color: #840b58 !important;
+      .chatBox2 {
+        margin-top: 12px;
+        margin-left: 16px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-family: "poppins";
+        flex: 1;
+        font-style: italic;
+        text-align: justify;
+        border-radius: 14px;
+        border-radius: 14px;
+        background: linear-gradient(145deg, #770a4f, #8d0c5e);
+        box-shadow: 7px 7px 14px #70094b, -7px -7px 14px #980d65;
+        position: relative;
+        .traingle2 {
+          background-color: linear-gradient(145deg, #7f0c87, #970ea1);
+          top: -5px;
+          left: 0px;
+          clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+          min-width: 40px;
+          z-index: 2;
+          min-height: 40px;
+
+          position: absolute;
+        }
+      }
+      .chatBox2 {
+        border-radius: 14px;
+      }
+    }
     background-color: #0b223b;
     min-height: 90vh;
     text-align: center;
@@ -90,7 +146,7 @@ $bacground_3_color: #133965;
         }
       }
 
-      .chatBox {
+      .chatBox1 {
         margin-top: 12px;
         margin-left: 16px;
         padding: 10px 20px;
@@ -103,7 +159,7 @@ $bacground_3_color: #133965;
         background: #08332c;
         box-shadow: 7px 7px 14px #041916, -7px -7px 14px #0c4d42;
         position: relative;
-        .traingle {
+        .traingle1 {
           background-color: #08332c;
           top: -5px;
           left: 0px;
@@ -124,7 +180,6 @@ $bacground_3_color: #133965;
       border-radius: 14px;
       padding-bottom: 28px;
       box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
-      background-color: #250424;
     }
     .msgInfo {
       display: flex;
@@ -143,7 +198,7 @@ $bacground_3_color: #133965;
       }
     }
 
-    .chatBox {
+    .chatBox0 {
       margin-top: 12px;
       margin-left: 16px;
       padding: 10px 16px;
@@ -156,7 +211,7 @@ $bacground_3_color: #133965;
       background: #250424;
       position: relative;
       box-shadow: 9px 9px 18px #120212, -9px -9px 18px #380636;
-      .traingle {
+      .traingle0 {
         background-color: #250424;
         top: -5px;
         left: 0px;
@@ -235,5 +290,56 @@ $bacground_3_color: #133965;
         }
       }
     }
+  }
+}
+
+//footer css
+
+.footer {
+  min-height: 50px;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: rgb(3, 9, 31);
+  color: #fff;
+}
+.pickTheme {
+  display: flex;
+  justify-content: flex-end;
+  p {
+    align-self: center;
+  }
+  .internalTheme {
+    cursor: pointer;
+  }
+  .color0 {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: #250424;
+  }
+  .color1 {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: #08332c;
+  }
+  .color2 {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: #840b58;
+  }
+  .borderyes {
+    border: 2px solid rgb(255, 255, 255);
+    transform: scale(1.05);
+    border-radius: 10px;
+    margin: 20px 10px;
+
+    transition: transform 0.2s ease-in;
+  }
+  .borderno {
+    border: 0px;
+    margin: 20px 10px;
+    transition: transform 0.2s ease-in;
   }
 }

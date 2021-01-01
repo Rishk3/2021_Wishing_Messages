@@ -3,6 +3,10 @@
   color: white;
 }
 
+.home button:focus {
+  outline: none !important;
+}
+
 .home p,
 .home h1,
 .home h2,
@@ -30,9 +34,10 @@
           align-items: center;
 }
 
-.home .nav .logo h2 {
+.home .nav .logo h3 {
   font-size: 20px;
   margin: 0;
+  text-align: center;
   padding: 0;
 }
 
@@ -57,6 +62,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .home .nav .right .profile span {
@@ -69,9 +75,69 @@
 }
 
 .home .wish {
+  padding: 10px;
   background-color: #0b223b;
   min-height: 90vh;
   text-align: center;
+}
+
+.home .wish .btnAdd {
+  background-color: #285291;
+  padding: 12px 20px;
+}
+
+.home .wish .btnAdd .link {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .wish .msgbackcolor0 {
+  background-color: #250424 !important;
+}
+
+.home .wish .msgbackcolor1 {
+  background-color: #08332c !important;
+}
+
+.home .wish .msgbackcolor2 {
+  background-color: #840b58 !important;
+}
+
+.home .wish .msgbackcolor2 .chatBox2 {
+  margin-top: 12px;
+  margin-left: 16px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "poppins";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-style: italic;
+  text-align: justify;
+  border-radius: 14px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #770a4f, #8d0c5e);
+  -webkit-box-shadow: 7px 7px 14px #70094b, -7px -7px 14px #980d65;
+          box-shadow: 7px 7px 14px #70094b, -7px -7px 14px #980d65;
+  position: relative;
+}
+
+.home .wish .msgbackcolor2 .chatBox2 .traingle2 {
+  background-color: linear-gradient(145deg, #7f0c87, #970ea1);
+  top: -5px;
+  left: 0px;
+  -webkit-clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+          clip-path: polygon(0 0, 5% 0, 100% 40%, 0 40%);
+  min-width: 40px;
+  z-index: 2;
+  min-height: 40px;
+  position: absolute;
+}
+
+.home .wish .msgbackcolor2 .chatBox2 {
+  border-radius: 14px;
 }
 
 .home .wish h2 {
@@ -136,7 +202,7 @@
   font-weight: 300;
 }
 
-.home .wish .MessaegSection:nth-child(odd) .chatBox {
+.home .wish .MessaegSection:nth-child(odd) .chatBox1 {
   margin-top: 12px;
   margin-left: 16px;
   padding: 10px 20px;
@@ -154,7 +220,7 @@
   position: relative;
 }
 
-.home .wish .MessaegSection:nth-child(odd) .chatBox .traingle {
+.home .wish .MessaegSection:nth-child(odd) .chatBox1 .traingle1 {
   background-color: #08332c;
   top: -5px;
   left: 0px;
@@ -180,7 +246,6 @@
   padding-bottom: 28px;
   -webkit-box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
           box-shadow: 7px 7px 14px #05111d, -7px -7px 14px #113359;
-  background-color: #250424;
 }
 
 .home .wish .msgInfo {
@@ -211,7 +276,7 @@
   font-weight: 300;
 }
 
-.home .wish .chatBox {
+.home .wish .chatBox0 {
   margin-top: 12px;
   margin-left: 16px;
   padding: 10px 16px;
@@ -229,7 +294,7 @@
           box-shadow: 9px 9px 18px #120212, -9px -9px 18px #380636;
 }
 
-.home .wish .chatBox .traingle {
+.home .wish .chatBox0 .traingle0 {
   background-color: #250424;
   top: -5px;
   left: 0px;
@@ -316,5 +381,74 @@
   color: #fff;
   outline: none;
   background-color: #136e53;
+}
+
+.footer {
+  min-height: 50px;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #03091f;
+  color: #fff;
+}
+
+.pickTheme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pickTheme p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pickTheme .internalTheme {
+  cursor: pointer;
+}
+
+.pickTheme .color0 {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: #250424;
+}
+
+.pickTheme .color1 {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: #08332c;
+}
+
+.pickTheme .color2 {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: #840b58;
+}
+
+.pickTheme .borderyes {
+  border: 2px solid white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+  margin: 20px 10px;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.pickTheme .borderno {
+  border: 0px;
+  margin: 20px 10px;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 /*# sourceMappingURL=main.css.map */

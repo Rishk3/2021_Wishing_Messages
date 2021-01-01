@@ -8,21 +8,23 @@
     rgba(251, 188, 5, 1) 66%,
     rgba(234, 67, 53, 1) 100%
   );
-
-  position: absolute;
-  top: 70px;
-  left: 10vw;
-
   text-align: left;
 }
+.loginPage {
+  padding: 10px 20px;
+  padding-top: 30vw;
+  min-height: 90vh;
+  background-color: rgb(59, 28, 90);
+  text-align: center;
+}
 .login__container {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
 
   cursor: pointer;
-  margin-left: 30vw;
-  margin: 20px 20vw;
+
+  margin: 10px 10vw;
+
   padding: 10px 20px;
   border-radius: 20px;
 }
